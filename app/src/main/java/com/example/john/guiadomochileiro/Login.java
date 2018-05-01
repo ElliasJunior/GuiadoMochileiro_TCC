@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
             Toast toast = Toast.makeText(contexto, texto,duracao);
             toast.show();
 
-            Intent login = new Intent(this, Inicio.class);
+            Intent login = new Intent(this, TelaInicial.class);
             startActivity(login);
         }
         else{

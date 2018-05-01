@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_tela_inicial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_tela_inicial"
+        app:menu="@menu/activity_tela_inicial_drawer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="47dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/etBuscar"
+            android:layout_marginEnd="50dp"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btCat1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="130dp"
+            android:text="Cat 1" />
+
+        <Button
+            android:id="@+id/btCat2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCat1"
+            android:layout_centerHorizontal="true"
+            android:text="Cat 2" />
+
+        <Button
+            android:id="@+id/btCat3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvAvaliacao1"
+            android:layout_alignTop="@+id/btCat1"
+            android:text="Cat 3" />
+
+        <Button
+            android:id="@+id/btCat4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_marginTop="192dp"
+            android:text="Cat 4" />
+
+        <Button
+            android:id="@+id/btCat5"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCat4"
+            android:layout_centerHorizontal="true"
+            android:text="Cat 5" />
+
+        <Button
+            android:id="@+id/btCat6"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btCat3"
+            android:layout_alignTop="@+id/btCat4"
+            android:text="Cat 6" />
+
+        <TextView
+            android:id="@+id/tvLocal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_marginBottom="263dp"
+            android:text="Local 1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDetalhe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_below="@+id/tvLocal1"
+            android:layout_marginTop="-263dp"
+            android:text="Detalhe local 1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvDetalhe1"
+            android:layout_toEndOf="@+id/etBuscar"
+            android:text="@string/estrela_5"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLocal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_marginBottom="172dp"
+            android:text="Local 2"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDetalhe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_below="@+id/tvLocal2"
+            android:layout_marginTop="-172dp"
+            android:text="Detalhe local 2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvDetalhe2"
+            android:layout_toEndOf="@+id/etBuscar"
+            android:text="@string/estrela_4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLocal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvDetalhe3"
+            android:layout_alignStart="@+id/btCat1"
+            android:text="Local 3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDetalhe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_marginBottom="58dp"
+            android:text="Detalhe local 3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvDetalhe3"
+            android:layout_toEndOf="@+id/etBuscar"
+            android:text="@string/estrela_3"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

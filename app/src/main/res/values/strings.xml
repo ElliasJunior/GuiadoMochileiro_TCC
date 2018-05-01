@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Guia do Mochileiro</string>
+    <string name="title_activity_tela_inicial">Guia do Mochileiro</string>
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Fechar Menu</string>
+    <string name="nav_header_title">Usuário de teste</string>
+    <string name="nav_header_subtitle">teste@teste.com</string>
+    <string name="nav_header_desc">Menu</string>
+    <string name="action_settings">Opções</string>
+    <string name="estrela_1">★</string>
+    <string name="estrela_2">★★</string>
+    <string name="estrela_3">★★★</string>
+    <string name="estrela_4">★★★★</string>
+    <string name="estrela_5">★★★★★</string>
 </resources>
