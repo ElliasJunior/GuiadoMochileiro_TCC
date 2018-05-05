@@ -20,7 +20,11 @@
         <activity
             android:name=".TelaInicial"
             android:label="@string/title_activity_tela_inicial"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PerfilUsuario" />
+        <activity android:name=".PerfilAdmin" />
+        <activity android:name=".CadastrarComentario" />
+        <activity android:name=".CadastrarLocal"></activity>
     </application>
 
 </manifest>
