@@ -26,7 +26,12 @@
         <activity android:name=".CadastrarComentario" />
         <activity android:name=".CadastrarLocal" />
         <activity android:name=".EditarComentario" />
-        <activity android:name=".EditarLocal"></activity>
+        <activity android:name=".EditarLocal" />
+        <activity android:name=".EditarUsuario" />
+        <activity android:name=".MeusComentarios" />
+        <activity android:name=".MeusLocais" />
+        <activity android:name=".TodosUsuarios" />
+        <activity android:name=".Inicio"></activity>
     </application>
 
 </manifest>

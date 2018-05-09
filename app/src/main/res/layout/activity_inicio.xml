@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etBuscar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="58dp"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btCat1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="119dp"
+            android:text="Cat 1" />
+
+        <Button
+            android:id="@+id/btCat2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCat1"
+            android:layout_centerHorizontal="true"
+            android:text="Cat 2" />
+
+        <Button
+            android:id="@+id/btCat3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCat1"
+            android:layout_toEndOf="@+id/etBuscar"
+            android:text="Cat 3" />
+
+        <Button
+            android:id="@+id/btCat4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btCat1"
+            android:layout_marginTop="179dp"
+            android:text="Cat 4" />
+
+        <Button
+            android:id="@+id/btCat5"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCat4"
+            android:layout_centerHorizontal="true"
+            android:text="Cat 5" />
+
+        <Button
+            android:id="@+id/btCat6"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCat4"
+            android:layout_toEndOf="@+id/etBuscar"
+            android:text="Cat 6" />
+
+        <TextView
+            android:id="@+id/tvLocal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="241dp"
+            android:layout_marginStart="50dp"
+            android:text="Local 1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDetalhe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLocal1"
+            android:layout_marginTop="-241dp"
+            android:layout_toStartOf="@+id/btCat2"
+            android:text="Detalhe local 1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btBuscar"
+            android:layout_below="@+id/tvLocal1"
+            android:layout_marginTop="-241dp"
+            android:text="★★★★★"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLocal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvDetalhe2"
+            android:layout_alignStart="@+id/tvLocal1"
+            android:text="Local 2"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDetalhe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="137dp"
+            android:layout_toStartOf="@+id/btCat2"
+            android:text="Detalhe local 2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btBuscar"
+            android:layout_below="@+id/tvLocal2"
+            android:text="★★★★"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLocal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvDetalhe3"
+            android:layout_alignStart="@+id/tvLocal1"
+            android:text="Local 3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDetalhe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="58dp"
+            android:layout_toStartOf="@+id/btCat2"
+            android:text="Detalhe local 3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btBuscar"
+            android:layout_below="@+id/tvLocal3"
+            android:text="★★★"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
