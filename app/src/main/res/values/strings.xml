@@ -12,4 +12,5 @@
     <string name="estrela_3">★★★</string>
     <string name="estrela_4">★★★★</string>
     <string name="estrela_5">★★★★★</string>
+    <string name="title_activity_mapa">Map</string>
 </resources>

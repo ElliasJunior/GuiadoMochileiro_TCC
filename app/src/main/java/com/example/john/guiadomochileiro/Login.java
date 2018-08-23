@@ -31,6 +31,8 @@ public class Login extends AppCompatActivity {
 
         if(edUsuario.getText().length() == 0){
             edUsuario.setError("Campo vazio");
+            Intent mapa = new Intent(this, Mapa.class);
+            startActivity(mapa);
         }
         if(edSenha.getText().length() == 0){
             edSenha.setError("Campo vazio");
