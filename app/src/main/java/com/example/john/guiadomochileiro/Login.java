@@ -31,16 +31,25 @@ public class Login extends AppCompatActivity {
 
         if(edUsuario.getText().length() == 0){
             edUsuario.setError("Campo vazio");
-            Intent mapa = new Intent(this, Mapa.class);
-            startActivity(mapa);
         }
         if(edSenha.getText().length() == 0){
             edSenha.setError("Campo vazio");
         }
 
-        if((usuario.equals("adm")) && (senha.equals("adm"))){
+        if((usuario.equals("admin")) && (senha.equals("admin"))){
             Context contexto = getApplicationContext();
-            String texto = "Login efetuado sucesso";
+            String texto = "Login de admin efetuado sucesso";
+            int duracao = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
+
+            Intent login = new Intent(this, TelaInicial.class);
+            startActivity(login);
+        }
+        if((usuario.equals("usuario")) && (senha.equals("usuario"))){
+            Context contexto = getApplicationContext();
+            String texto = "Login de usuário efetuado sucesso";
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
@@ -51,7 +60,7 @@ public class Login extends AppCompatActivity {
         }
         else{
             Context contexto = getApplicationContext();
-            String texto = "Login ou senha invalido";
+            String texto = "Login ou senha inválidos";
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
