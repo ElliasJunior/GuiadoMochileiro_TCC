@@ -1,5 +1,7 @@
 package com.example.john.guiadomochileiro;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -18,6 +20,8 @@ import android.widget.Toast;
 public class TelaInicial extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private android.support.v4.app.FragmentManager fragmentManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +37,15 @@ public class TelaInicial extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fragmentManager = getSupportFragmentManager();
+
+        android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        transaction.add(R.id.drawer_layout, new Mapa(), "Mapa");
+
+        transaction.commitAllowingStateLoss();
+
     }
 
     @Override
@@ -52,7 +65,7 @@ public class TelaInicial extends AppCompatActivity
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -65,7 +78,7 @@ public class TelaInicial extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
