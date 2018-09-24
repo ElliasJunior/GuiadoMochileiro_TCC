@@ -37,7 +37,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="167dp"
-            android:text="Senha"
+            android:text="Senha: *****"
             android:textSize="18sp" />
 
         <TextView
@@ -47,6 +47,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="174dp"
+            android:onClick="locais"
             android:text="Ver meus locais cadastrados"
             android:textSize="18sp" />
 
@@ -57,6 +58,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="119dp"
+            android:onClick="comentarios"
             android:text="Ver meus comentários"
             android:textSize="18sp" />
 
@@ -67,6 +69,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="221dp"
+            android:onClick="alterarDados"
             android:text="Alterar dados"
             android:textSize="18sp" />
 
@@ -77,6 +80,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="40dp"
+            android:onClick="voltar"
             android:text="Voltar" />
     </RelativeLayout>
 

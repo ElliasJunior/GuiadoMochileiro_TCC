@@ -47,7 +47,7 @@ public class Login extends AppCompatActivity {
             Intent login = new Intent(this, TelaInicial.class);
             startActivity(login);
         }
-        if((usuario.equals("usuario")) && (senha.equals("usuario"))){
+        else if((usuario.equals("usuario")) && (senha.equals("usuario"))){
             Context contexto = getApplicationContext();
             String texto = "Login de usuário efetuado sucesso";
             int duracao = Toast.LENGTH_SHORT;

@@ -36,14 +36,20 @@ public class CadastrarUsuario extends AppCompatActivity {
             edSenha.setError("Campo vazio");
         }
 
-        if((usuario.length() > 4) && (email.length() > 12) && (senha.length() > 4) ) {
+        if((usuario.length() > 4) && (email.length() > 4) && (senha.length() > 4) ) {
             Context contexto = getApplicationContext();
             String texto = "Usuário cadastrado com sucesso";
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
-            toast.show();
             finish();
+        }
+        else{
+            Context contexto = getApplicationContext();
+            String texto = "Dados informados incorretamente. Por favor verifique as informações.";
+            int duracao = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(contexto, texto,duracao);
         }
     }
 

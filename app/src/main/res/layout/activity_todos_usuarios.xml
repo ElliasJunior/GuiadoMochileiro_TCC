@@ -96,6 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="53dp"
+            android:onClick="voltar"
             android:layout_toStartOf="@+id/tvUsuario01"
             android:text="Voltar" />
 

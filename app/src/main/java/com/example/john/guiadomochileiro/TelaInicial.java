@@ -3,6 +3,7 @@ package com.example.john.guiadomochileiro;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -93,7 +94,13 @@ public class TelaInicial extends AppCompatActivity
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
             toast.show();
-        } else if (id == R.id.nav_gallery) {
+
+            Intent perfil = new Intent(this, PerfilUsuario.class);
+            startActivity(perfil);
+
+        }
+        /*
+        else if (id == R.id.nav_gallery) {
             Context contexto = getApplicationContext();
             String texto = "Teste menu 2";
             int duracao = Toast.LENGTH_SHORT;
@@ -101,7 +108,10 @@ public class TelaInicial extends AppCompatActivity
             Toast toast = Toast.makeText(contexto, texto,duracao);
             toast.show();
 
-        }
+            Intent perfilA = new Intent(this, PerfilAdmin.class);
+            startActivity(perfilA);
+
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

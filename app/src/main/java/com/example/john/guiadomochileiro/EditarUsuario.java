@@ -41,5 +41,12 @@ public class EditarUsuario extends AppCompatActivity {
             toast.show();
             finish();
         }
+        else{
+            Context contexto = getApplicationContext();
+            String texto = "Dados informados incorretamente. Por favor verifique as informações.";
+            int duracao = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+        }
     }
 }
