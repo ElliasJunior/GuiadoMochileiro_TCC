@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerfilUsuario">
+    tools:context=".AlterarPerfil">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tvNome"
+            android:id="@+id/tvUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
-            android:text="Nome"
-            android:textSize="24sp" />
+            android:layout_marginTop="76dp"
+            android:text="Usuário"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvEmail"
@@ -26,63 +26,56 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="109dp"
-            android:text="teste@teste.com.br"
+            android:layout_marginTop="221dp"
+            android:text="Email"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvSenha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="167dp"
-            android:text="Senha: *****"
+            android:layout_marginBottom="196dp"
+            android:text="Senha"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/tvMeusLocais"
+        <EditText
+            android:id="@+id/etSenha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="174dp"
-            android:onClick="locais"
-            android:text="Ver meus locais cadastrados"
-            android:textSize="18sp" />
+            android:layout_marginBottom="127dp"
+            android:ems="10"
+            android:inputType="textPassword" />
 
-        <TextView
-            android:id="@+id/tvComentarios"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="119dp"
-            android:onClick="comentarios"
-            android:text="Ver meus comentários"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvAlterarDados"
+        <EditText
+            android:id="@+id/edUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="221dp"
-            android:onClick="alterarDados"
-            android:text="Alterar dados"
-            android:textSize="18sp" />
+            android:layout_marginTop="128dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
 
         <Button
-            android:id="@+id/btVoltar"
+            android:id="@+id/bAlterar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="40dp"
-            android:onClick="voltar"
-            android:text="Voltar" />
-
+            android:layout_marginBottom="44dp"
+            android:text="Alterar" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

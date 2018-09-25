@@ -38,5 +38,9 @@ public class Mapa extends SupportMapFragment implements OnMapReadyCallback {
         LatLng brasil = new LatLng(-15.7915858, -47.89521206);
         mMap.addMarker(new MarkerOptions().position(brasil).title("Brasília"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(brasil));
+
+        LatLng brasilia = new LatLng(-15.791412, -47.8952510);
+        mMap.addMarker(new MarkerOptions().position(brasilia).title("Brasília 2"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(brasilia));
     }
 }

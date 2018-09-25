@@ -14,7 +14,7 @@ public class PerfilUsuario extends AppCompatActivity {
     }
 
     public void alterarDados(View view){
-        Intent alterar = new Intent(this, EditarUsuario.class);
+        Intent alterar = new Intent(this, AlterarPerfil.class);
         startActivity(alterar);
     }
 

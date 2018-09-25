@@ -39,13 +39,15 @@ public class TelaInicial extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        /*
         fragmentManager = getSupportFragmentManager();
 
         android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        transaction.add(R.id.drawer_layout, new Mapa(), "Mapa");
+        transaction.add(R.id.tela_mapa, new Mapa(), "Mapa");
 
         transaction.commitAllowingStateLoss();
+        */
 
     }
 
@@ -89,7 +91,7 @@ public class TelaInicial extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             Context contexto = getApplicationContext();
-            String texto = "Teste menu 1";
+            String texto = "Perfil de usuário";
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
