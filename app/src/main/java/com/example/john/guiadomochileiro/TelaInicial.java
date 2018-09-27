@@ -39,15 +39,15 @@ public class TelaInicial extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        /*
+
         fragmentManager = getSupportFragmentManager();
 
         android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        transaction.add(R.id.tela_mapa, new Mapa(), "Mapa");
+        transaction.add(R.id.conteinerMapa, new Mapa(), "Mapa");
 
         transaction.commitAllowingStateLoss();
-        */
+
 
     }
 

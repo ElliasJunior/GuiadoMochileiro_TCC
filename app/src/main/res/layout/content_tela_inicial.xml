@@ -9,4 +9,9 @@
     tools:context=".TelaInicial"
     tools:showIn="@layout/app_bar_tela_inicial">
 
+    <FrameLayout
+        android:id="@+id/conteinerMapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TextView" />
 </android.support.constraint.ConstraintLayout>
