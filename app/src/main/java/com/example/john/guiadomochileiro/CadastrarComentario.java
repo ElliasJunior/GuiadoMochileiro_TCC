@@ -10,10 +10,6 @@ import android.widget.Toast;
 
 public class CadastrarComentario extends AppCompatActivity {
 
-    private String[] avaliacao = new String[]{"★","★★","★★★","★★★★","★★★★★"};
-
-    private Spinner sp;
-
     public static EditText comentario, dtvisita;
 
     @Override
@@ -21,13 +17,7 @@ public class CadastrarComentario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_comentario);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, avaliacao);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        sp = (Spinner) findViewById(R.id.spinner2);
-        sp.setAdapter(adapter);
-
-        EditText edComentario = (EditText) findViewById(R.id.etComentario);
+        /*EditText edComentario = (EditText) findViewById(R.id.etComentario);
         EditText edDtvisita = (EditText) findViewById(R.id.edDtVisita);
 
         if(edComentario.getText().length() == 0){
@@ -52,6 +42,6 @@ public class CadastrarComentario extends AppCompatActivity {
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
-        }
+        }*/
     }
 }
