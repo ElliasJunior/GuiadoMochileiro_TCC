@@ -8,7 +8,14 @@
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_send"
             android:title="Perfil" />
-
+        <item
+            android:id="@+id/nav_buscasimples"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Busca Mapa" />
+        <item
+            android:id="@+id/nav_buscacompleta"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Busca Avançada" />
     </group>
 
 

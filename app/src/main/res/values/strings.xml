@@ -13,4 +13,21 @@
     <string name="estrela_4">★★★★</string>
     <string name="estrela_5">★★★★★</string>
     <string name="title_activity_mapa">Map</string>
+
+    <string-array name="spinner_categoria">
+        <item>Parque</item>
+        <item>Praça</item>
+        <item>Trilha</item>
+        <item>Praia</item>
+        <item>Lago</item>
+        <item>Outros</item>
+    </string-array>
+
+    <string-array name="spinner_avaliacao">
+        <item>★</item>
+        <item>★★</item>
+        <item>★★★</item>
+        <item>★★★★</item>
+        <item>★★★★★</item>
+    </string-array>
 </resources>

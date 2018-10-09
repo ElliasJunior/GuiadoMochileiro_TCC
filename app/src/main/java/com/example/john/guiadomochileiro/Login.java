@@ -65,6 +65,7 @@ public class Login extends AppCompatActivity {
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
             toast.show();
+            
         }
     }
 }

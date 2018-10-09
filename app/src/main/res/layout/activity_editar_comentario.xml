@@ -28,7 +28,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="96dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="comentario"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvAvaliacao"
@@ -66,7 +68,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="137dp"
             android:ems="10"
-            android:inputType="date" />
+            android:inputType="date"
+            android:text="09/10/2018"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btComentar"

@@ -42,6 +42,7 @@ public class CadastrarUsuario extends AppCompatActivity {
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
             finish();
         }
         else{
@@ -50,6 +51,7 @@ public class CadastrarUsuario extends AppCompatActivity {
             int duracao = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
         }
     }
 

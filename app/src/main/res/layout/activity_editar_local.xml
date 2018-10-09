@@ -30,7 +30,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="51dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Local"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvDescricao"
@@ -50,7 +52,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="144dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Descrição"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvCategoria"
@@ -86,7 +90,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="198dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="-42.245"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvLongetude"
@@ -105,7 +111,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="92dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="72.352"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btCadastrar"

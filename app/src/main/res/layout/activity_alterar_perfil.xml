@@ -48,7 +48,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="127dp"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:text="admin"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/edUsuario"
@@ -58,15 +60,20 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="128dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="admin"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/edEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:text="admin@admin.com.br"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/bAlterar"
@@ -75,6 +82,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="44dp"
+            android:onClick="alterarPerfil"
             android:text="Alterar" />
     </RelativeLayout>
 

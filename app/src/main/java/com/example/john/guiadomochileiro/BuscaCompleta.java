@@ -7,15 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class MeusComentarios extends AppCompatActivity {
+import com.example.john.guiadomochileiro.ui.buscacompleta.BuscaCompletaFragment;
+
+public class BuscaCompleta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meus_comentarios);
+        setContentView(R.layout.busca_completa_activity);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, BuscaCompletaFragment.newInstance())
+                    .commitNow();
+        }
     }
 
-    public void buscarComentarios(View view){
+    public void buscaLocal(View view){
         Context contexto = getApplicationContext();
         String texto = "Busca não desenvolvida";
         int duracao = Toast.LENGTH_SHORT;
@@ -23,15 +30,9 @@ public class MeusComentarios extends AppCompatActivity {
         Toast toast = Toast.makeText(contexto, texto,duracao);
         toast.show();
     }
-    public void editarComentario(View view){
-        Intent dcomentario = new Intent(this, EditarComentario.class);
-        startActivity(dcomentario);
-    }
-    public void cadastrar(View view){
-        Intent comentario = new Intent(this, CadastrarComentario.class);
-        startActivity(comentario);
-    }
-    public void voltar(View view){
-        finish();
+
+    public void detalheLocal(View view){
+        Intent dlocal = new Intent(this, DetalheLocal.class);
+        startActivity(dlocal);
     }
 }

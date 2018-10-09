@@ -18,6 +18,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.john.guiadomochileiro.ui.buscacompleta.BuscaCompletaFragment;
+
 public class TelaInicial extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -101,19 +103,18 @@ public class TelaInicial extends AppCompatActivity
             startActivity(perfil);
 
         }
-        /*
-        else if (id == R.id.nav_gallery) {
-            Context contexto = getApplicationContext();
-            String texto = "Teste menu 2";
-            int duracao = Toast.LENGTH_SHORT;
 
-            Toast toast = Toast.makeText(contexto, texto,duracao);
-            toast.show();
+        else if (id == R.id.nav_buscasimples) {
+            android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.conteinerMapa, new Mapa(),"Mapa");
+            transaction.commit();
+        }
 
-            Intent perfilA = new Intent(this, PerfilAdmin.class);
-            startActivity(perfilA);
-
-        }*/
+        else if (id == R.id.nav_buscacompleta) {
+            android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.conteinerMapa, new BuscaCompletaFragment(),"Início");
+            transaction.commit();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
