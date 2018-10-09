@@ -71,7 +71,8 @@
             android:layout_height="42dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="253dp" />
+            android:layout_marginTop="253dp"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvLatitude"
@@ -79,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="259dp"
+            android:layout_marginBottom="245dp"
             android:text="Latitude" />
 
         <EditText
@@ -120,9 +121,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="21dp"
+            android:layout_marginBottom="22dp"
+            android:layout_toEndOf="@+id/tvNome"
+            android:onClick="editar"
             android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/btVisualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btCadastrar"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="-13dp"
+            android:layout_toStartOf="@+id/tvLongetude"
+            android:onClick="visualizarLocal"
+            android:text="Visualizar" />
 
     </RelativeLayout>
 
