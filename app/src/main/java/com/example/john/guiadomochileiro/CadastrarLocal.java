@@ -19,6 +19,7 @@ public class CadastrarLocal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_local);
+        setTitle(" ");
 
         categoria = (Spinner) findViewById(R.id.spCategoria);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.spinner_categoria, android.R.layout.simple_spinner_item);

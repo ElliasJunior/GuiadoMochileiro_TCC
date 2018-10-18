@@ -1,8 +1,10 @@
 package com.example.john.guiadomochileiro;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -10,7 +12,7 @@ import android.widget.Toast;
 
 public class EditarLocal extends AppCompatActivity {
 
-    private String[] categoriasNome = new String[]{"Local Histórico","Praia","Natureza","Cinema","Casa de Show","Diversão"};
+    private String[] categoriasNome = new String[]{"Parque","Praça","Trilha","Praia","Lago","Diversos"};
 
     private Spinner sp;
 
@@ -20,6 +22,7 @@ public class EditarLocal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_local);
+        setTitle(" ");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, categoriasNome);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -27,10 +30,17 @@ public class EditarLocal extends AppCompatActivity {
         sp = (Spinner) findViewById(R.id.spinner);
         sp.setAdapter(adapter);
 
+
+    }
+    public void editar(View view){
         EditText edNome = (EditText) findViewById(R.id.etNome);
         EditText edDescricao = (EditText) findViewById(R.id.etDecricao);
         EditText edLatitude = (EditText) findViewById(R.id.etLatitude);
         EditText edLongetude = (EditText) findViewById(R.id.etLongetude);
+        String nome = edNome.getText().toString();
+        String descricao = edDescricao.getText().toString();
+        String latitude = edLatitude.getText().toString();
+        String longetude = edLongetude.getText().toString();
 
         if(edNome.getText().length() == 0){
             edNome.setError("Campo vazio");
@@ -60,5 +70,9 @@ public class EditarLocal extends AppCompatActivity {
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
         }
+    }
+    public void visualizarLocal(View view){
+        Intent dlocal = new Intent(this, DetalheLocal.class);
+        startActivity(dlocal);
     }
 }

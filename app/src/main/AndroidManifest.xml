@@ -56,7 +56,7 @@
             android:label="@string/title_activity_mapa" />
         <activity android:name=".AlterarPerfil" />
         <activity android:name=".DetalheLocal" />
-        <activity android:name=".BuscaCompleta"></activity>
+        <activity android:name=".BuscaCompleta" />
     </application>
 
 </manifest>

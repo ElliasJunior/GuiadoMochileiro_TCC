@@ -3,6 +3,7 @@ package com.example.john.guiadomochileiro;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -20,6 +21,7 @@ public class EditarComentario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_comentario);
+        setTitle(" ");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, avaliacao);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -27,8 +29,14 @@ public class EditarComentario extends AppCompatActivity {
         sp = (Spinner) findViewById(R.id.spinner2);
         sp.setAdapter(adapter);
 
+
+    }
+    public void comentar(View view){
         EditText edComentario = (EditText) findViewById(R.id.etComentario);
         EditText edDtvisita = (EditText) findViewById(R.id.edDtVisita);
+        String comentario = edComentario.getText().toString();
+        String dtvisita = edDtvisita.getText().toString();
+
 
         if(edComentario.getText().length() == 0){
             edComentario.setError("Campo vazio");

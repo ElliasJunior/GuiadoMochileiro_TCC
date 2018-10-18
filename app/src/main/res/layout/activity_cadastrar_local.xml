@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/tvNome"
@@ -21,7 +22,7 @@
             android:layout_marginTop="10dp"
             android:text="Nome"
             android:textAlignment="center"
-            android:textSize="14sp"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="176dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -31,9 +32,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="40dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvDescricao"
@@ -41,87 +43,89 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="105dp"
+            android:layout_marginTop="120dp"
             android:text="Descrição"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etDecricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/spinner"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="145dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/tvLongetude"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="215dp"
-            android:text="Categoria" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:text="Categoria"
+            android:textSize="18sp" />
 
         <Spinner
             android:id="@+id/spCategoria"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/etNome"
+            android:layout_width="220dp"
+            android:layout_height="34dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="253dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvLatitude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="268dp"
-            android:text="Latitude" />
+            android:layout_marginTop="320dp"
+            android:text="Latitude"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etLatitude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/spinner"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="100dp"
-            android:layout_marginBottom="201dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvLongetude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="162dp"
-            android:text="Longetude" />
+            android:layout_marginTop="430dp"
+            android:text="Longetude"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etLongetude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/spinner"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="100dp"
-            android:layout_marginBottom="87dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="460dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btCadastrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="505dp"
             android:onClick="cadastrarLocal"
             android:text="Cadastrar" />
 

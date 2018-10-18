@@ -9,8 +9,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/tvNome"
@@ -18,121 +19,111 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="33dp"
-            android:text="Nome"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="28dp" />
+            android:layout_marginTop="25dp"
+            android:text="Parque da Cidade"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:id="@+id/mapaDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="80dp">
+        </FrameLayout>
 
         <Button
             android:id="@+id/btAutentica"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="239dp"
-            android:layout_marginTop="244dp"
-            android:text="Autenticar"
-            tools:layout_editor_absoluteX="286dp"
-            tools:layout_editor_absoluteY="203dp" />
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/btAvaliar"
+            android:layout_marginTop="202dp"
+            android:onClick="autenticar"
+            android:text="Autenticar" />
 
         <TextView
             android:id="@+id/tvDesc"
-            android:layout_width="199dp"
-            android:layout_height="74dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginTop="242dp"
-            android:text="Descrição"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="205dp" />
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="200dp"
+            android:text="Um ótimo lugar para passear com as crianças, fazer um bom picnik" />
 
         <TextView
             android:id="@+id/tvCategoria"
-            android:layout_width="211dp"
-            android:layout_height="31dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="328dp"
-            android:text="Categoria"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="301dp" />
-
-        <TextView
-            android:id="@+id/tvAvaliacao"
-            android:layout_width="210dp"
-            android:layout_height="38dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="36dp"
-            android:layout_marginBottom="164dp"
-            android:text="Avaliação"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="349dp" />
-
-        <TextView
-            android:id="@+id/tvComentario1"
-            android:layout_width="207dp"
-            android:layout_height="39dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="41dp"
-            android:layout_marginBottom="119dp"
-            android:text="Comentario 1"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="446dp" />
-
-        <TextView
-            android:id="@+id/tvComentario2"
-            android:layout_width="206dp"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="43dp"
-            android:layout_marginBottom="74dp"
-            android:text="Comentario 2"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="498dp" />
-
-        <TextView
-            android:id="@+id/tvComentario3"
-            android:layout_width="204dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="45dp"
-            android:layout_marginBottom="28dp"
-            android:text="Comentario 3"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="545dp" />
-
-        <Button
-            android:id="@+id/btAvaliar"
-            android:layout_width="87dp"
-            android:layout_height="39dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="63dp"
-            android:text="Avaliar"
-            tools:layout_editor_absoluteX="308dp"
-            tools:layout_editor_absoluteY="498dp" />
-
-        <TextView
-            android:id="@+id/tvMapa"
-            android:layout_width="372dp"
-            android:layout_height="116dp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="102dp"
-            android:background="#ccc"
-            android:paddingTop="35dp"
-            android:text="MAPA"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+            android:layout_marginTop="270dp"
+            android:text="Categoria: Parque" />
+
+        <TextView
+            android:id="@+id/tvComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="325dp"
+            android:text="Comentários"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvAvaliacao"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="365dp"
+            android:text="@string/estrela_3"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvComentario1"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="405dp"
+            android:text="Ótimo local, de fácil acesso, bem policiado" />
+
+        <TextView
+            android:id="@+id/tvComentario2"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="465dp"
+            android:text="Um bom lugar para fazer passeios, perto do nicolandia" />
+
+        <TextView
+            android:id="@+id/tvComentario3"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="525dp"
+            android:text="Cheio de opções de lazer e brincadeiras" />
+
+        <Button
+            android:id="@+id/btAvaliar"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="455dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="avaliar"
+            android:text="Avaliar" />
+
+
+
+
     </RelativeLayout>
 
 

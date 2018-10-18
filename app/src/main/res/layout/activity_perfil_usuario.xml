@@ -11,77 +11,61 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tvNome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
-            android:text="Nome"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/tvEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="109dp"
-            android:text="teste@teste.com.br"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvSenha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="167dp"
-            android:text="Senha: *****"
-            android:textSize="18sp" />
-
-        <TextView
             android:id="@+id/tvMeusLocais"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="174dp"
+            android:layout_marginTop="70dp"
             android:onClick="locais"
-            android:text="Ver meus locais cadastrados"
-            android:textSize="18sp" />
+            android:text="Ver Meus Locais"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/tvComentarios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="119dp"
+            android:layout_marginTop="230dp"
             android:onClick="comentarios"
             android:text="Ver meus comentários"
-            android:textSize="18sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/tvAlterarDados"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="221dp"
+            android:layout_marginTop="390dp"
             android:onClick="alterarDados"
-            android:text="Alterar dados"
-            android:textSize="18sp" />
+            android:text="Alterar Perfil"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/btVoltar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="40dp"
+            android:layout_marginTop="490dp"
             android:onClick="voltar"
             android:text="Voltar" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="170dp"
+            android:background="?android:attr/listDivider" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="330dp"
+            android:background="?android:attr/listDivider" />
 
     </RelativeLayout>
 

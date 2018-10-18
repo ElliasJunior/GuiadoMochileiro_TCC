@@ -13,6 +13,7 @@ public class MeusComentarios extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meus_comentarios);
+        setTitle(" ");
     }
 
     public void buscarComentarios(View view){

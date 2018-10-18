@@ -16,9 +16,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="10dp"
             android:text="Nome"
-            android:textSize="14sp"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="176dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -28,10 +28,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="51dp"
+            android:layout_marginTop="40dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Local"
+            android:text="Parque da Cidade"
             android:textAlignment="center" />
 
         <TextView
@@ -40,9 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="114dp"
+            android:layout_marginTop="120dp"
             android:text="Descrição"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etDecricao"
@@ -50,10 +50,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="144dp"
+            android:layout_marginTop="150dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Descrição"
+            android:text="Um ótimo lugar para passear com as crianças, fazer um bom picnik"
             android:textAlignment="center" />
 
         <TextView
@@ -62,34 +62,36 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="219dp"
-            android:text="Categoria" />
+            android:layout_marginTop="230dp"
+            android:text="Categoria"
+            android:textSize="18sp" />
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="210dp"
-            android:layout_height="42dp"
+            android:layout_width="220dp"
+            android:layout_height="34dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="253dp"
+            android:layout_marginTop="260dp"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvLatitude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="245dp"
-            android:text="Latitude" />
+            android:layout_marginTop="320dp"
+            android:text="Latitude"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etLatitude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="198dp"
+            android:layout_marginTop="350dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="-42.245"
@@ -99,18 +101,19 @@
             android:id="@+id/tvLongetude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="150dp"
-            android:text="Longetude" />
+            android:layout_marginTop="430dp"
+            android:text="Longetude"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etLongetude"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="92dp"
+            android:layout_marginTop="460dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="72.352"
@@ -120,20 +123,21 @@
             android:id="@+id/btCadastrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="22dp"
-            android:layout_toEndOf="@+id/tvNome"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="505dp"
+            android:layout_marginEnd="50dp"
             android:onClick="editar"
-            android:text="Cadastrar" />
+            android:text="Editar" />
 
         <Button
             android:id="@+id/btVisualizar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/btCadastrar"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="-13dp"
-            android:layout_toStartOf="@+id/tvLongetude"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="505dp"
             android:onClick="visualizarLocal"
             android:text="Visualizar" />
 

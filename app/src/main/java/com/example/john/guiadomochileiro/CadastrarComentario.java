@@ -18,6 +18,7 @@ public class CadastrarComentario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_comentario);
+        setTitle(" ");
 
         avaliacao = (Spinner) findViewById(R.id.spAvaliacao);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.spinner_avaliacao, android.R.layout.simple_spinner_item);

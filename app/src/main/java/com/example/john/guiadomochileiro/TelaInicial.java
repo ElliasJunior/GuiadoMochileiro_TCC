@@ -110,10 +110,9 @@ public class TelaInicial extends AppCompatActivity
             transaction.commit();
         }
 
-        else if (id == R.id.nav_buscacompleta) {
-            android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
-            transaction.replace(R.id.conteinerMapa, new BuscaCompletaFragment(),"Início");
-            transaction.commit();
+        else if (id == R.id.nav_buscacompletaf) {
+            Intent inicio = new Intent(this, Inicio.class);
+            startActivity(inicio);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -13,6 +13,7 @@ public class MeusLocais extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meus_locais);
+        setTitle(" ");
     }
     public void buscarLocal(View view){
         Context contexto = getApplicationContext();
@@ -23,8 +24,8 @@ public class MeusLocais extends AppCompatActivity {
         toast.show();
     }
     public void editarLocal(View view){
-        Intent dlocal = new Intent(this, DetalheLocal.class);
-        startActivity(dlocal);
+        Intent elocal = new Intent(this, EditarLocal.class);
+        startActivity(elocal);
     }
     public void cadastrar(View view){
         Intent local = new Intent(this, CadastrarLocal.class);

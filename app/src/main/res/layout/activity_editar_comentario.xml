@@ -16,9 +16,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="50dp"
             android:text="Comentário"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/etComentario"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="96dp"
+            android:layout_marginTop="110dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="comentario"
@@ -38,9 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="202dp"
+            android:layout_marginTop="200dp"
             android:text="Avaliação"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <Spinner
             android:id="@+id/spinner2"
@@ -48,25 +48,26 @@
             android:layout_height="42dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="261dp" />
+            android:layout_marginTop="260dp"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tvDtVisita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="201dp"
+            android:layout_marginTop="350dp"
             android:text="Data da visita"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/edDtVisita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="137dp"
+            android:layout_marginTop="410dp"
             android:ems="10"
             android:inputType="date"
             android:text="09/10/2018"
@@ -76,9 +77,10 @@
             android:id="@+id/btComentar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginTop="490dp"
+            android:onClick="comentar"
             android:text="Comentar" />
 
     </RelativeLayout>

@@ -16,20 +16,30 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="47dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btBuscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/edPesquisar"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
             android:onClick="buscarComentarios"
-            android:layout_marginEnd="47dp"
             android:text="Buscar" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="150dp"
+            android:layout_alignParentTop="true"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:id="@+id/tvComentario01"
@@ -37,10 +47,17 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="188dp"
             android:onClick="editarComentario"
-            android:layout_marginTop="185dp"
-            android:text="Comentário 01"
-            android:textSize="18sp" />
+            android:text="Ótimo local, de fácil acesso, bem policiado"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_marginTop="250dp"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:id="@+id/tvComentario02"
@@ -48,50 +65,44 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="288dp"
             android:onClick="editarComentario"
-            android:layout_marginTop="237dp"
-            android:text="Comentário 02"
-            android:textSize="18sp" />
+            android:text="Um bom lugar para fazer passeios, perto do nicolandia"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="match_parent"
+            android:layout_marginTop="350dp"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:id="@+id/tvComentario03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:onClick="editarComentario"
-            android:text="Comentário 03"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvComentario04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:onClick="editarComentario"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="240dp"
-            android:text="Comentário 04"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvComentario05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="388dp"
             android:onClick="editarComentario"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="187dp"
-            android:text="Comentário 05"
-            android:textSize="18sp" />
+            android:text="Cheio de opções de lazer e brincadeiras 03"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_marginTop="450dp"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
 
         <Button
             android:id="@+id/btCadastrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="49dp"
-            android:layout_marginEnd="86dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="45dp"
             android:onClick="cadastrar"
             android:text="Cadastrar" />
 
@@ -100,8 +111,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/btCadastrar"
-            android:layout_marginStart="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="480dp"
             android:onClick="voltar"
             android:text="Voltar" />
 

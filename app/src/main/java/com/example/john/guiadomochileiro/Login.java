@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle(" ");
     }
 
     public void cadastrarUsuario(View view) {
@@ -65,7 +67,7 @@ public class Login extends AppCompatActivity {
 
             Toast toast = Toast.makeText(contexto, texto,duracao);
             toast.show();
-            
+
         }
     }
 }

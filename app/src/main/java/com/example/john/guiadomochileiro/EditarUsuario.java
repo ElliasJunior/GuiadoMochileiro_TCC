@@ -14,6 +14,7 @@ public class EditarUsuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_usuario);
+        setTitle(" ");
 
         EditText edUsuario = (EditText)findViewById(R.id.etUsuario);
         EditText edEmail = (EditText)findViewById(R.id.etEmail);

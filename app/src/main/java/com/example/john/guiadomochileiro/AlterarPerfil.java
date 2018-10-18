@@ -9,32 +9,36 @@ import android.widget.Toast;
 
 public class AlterarPerfil extends AppCompatActivity {
 
-    //public static EditText usuario, email, senha;
+    public static EditText usuario, email, senha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alterar_perfil);
+        setTitle(" ");
     }
+
     public void alterarPerfil(View view){
-        EditText edUsuario = (EditText) findViewById(R.id.etUsuario);
-        EditText edEmail = (EditText) findViewById(R.id.etEmail);
-        EditText edSenha = (EditText) findViewById(R.id.etSenha);
-        String usuario = edUsuario.getText().toString();
-        String email = edEmail.getText().toString();
-        String senha = edSenha.getText().toString();
 
-        if(edUsuario.getText().length() == 0){
-            edUsuario.setError("Campo vazio");
+        EditText usuario = (EditText)findViewById(R.id.etUsuario);
+        EditText email = (EditText)findViewById(R.id.etEmail);
+        EditText senha = (EditText)findViewById(R.id.etSenha);
+        String susuario = usuario.getText().toString();
+        String semail = email.getText().toString();
+        String ssenha = senha.getText().toString();
+
+
+        if(usuario.getText().length() == 0){
+            usuario.setError("Campo vazio");
         }
-        if(edEmail.getText().length() == 0){
-            edUsuario.setError("Campo vazio");
+        if(email.getText().length() == 0){
+            email.setError("Campo vazio");
         }
-        if(edSenha.getText().length() == 0){
-            edSenha.setError("Campo vazio");
+        if(senha.getText().length() == 0){
+            senha.setError("Campo vazio");
         }
 
-        if((usuario.length() > 4) && (email.length() > 4) && (senha.length() > 4) ) {
+        if((susuario.length() > 4) && (semail.length() > 4) && (ssenha.length() > 4)) {
             Context contexto = getApplicationContext();
             String texto = "Usuário alterado com sucesso";
             int duracao = Toast.LENGTH_SHORT;
