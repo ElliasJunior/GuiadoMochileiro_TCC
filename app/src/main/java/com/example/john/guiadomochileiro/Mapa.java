@@ -35,12 +35,17 @@ public class Mapa extends SupportMapFragment implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng brasil = new LatLng(-15.7915858, -47.89521206);
-        mMap.addMarker(new MarkerOptions().position(brasil).title("Brasília"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(brasil));
+        LatLng parquedacidade = new LatLng(-15.8003432, -47.9078002);
+        mMap.addMarker(new MarkerOptions().position(parquedacidade).title("Parque da Cidade"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(parquedacidade));
 
-        LatLng brasilia = new LatLng(-15.791412, -47.8952510);
-        mMap.addMarker(new MarkerOptions().position(brasilia).title("Brasília 2"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(brasilia));
+        LatLng Parquedeaguasclaras = new LatLng(-15.8328589, -48.0347145);
+        mMap.addMarker(new MarkerOptions().position(Parquedeaguasclaras).title("Parque de Águas Claras"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Parquedeaguasclaras));
+
+        LatLng Parquedocortado = new LatLng(-15.8170468, -48.0809233);
+        mMap.addMarker(new MarkerOptions().position(Parquedocortado).title("Parque do Cortado"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Parquedocortado));
+
     }
 }
